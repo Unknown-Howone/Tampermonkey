@@ -10,6 +10,7 @@
 // ==/UserScript==
 
 (() => {
+    window.alert = () => false
     const content = document.querySelector('.blog-content-box')
     content.style.display = 'relative'
     content.style.left = -150 + 'px'
