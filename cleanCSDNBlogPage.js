@@ -27,5 +27,11 @@
     document.querySelector('#mainBox > main > div.template-box').parentElement.removeChild(document.querySelector('#mainBox > main > div.template-box'))
     document.querySelector('#mainBox > main > div.blog-footer-bottom').parentElement.removeChild(document.querySelector('#mainBox > main > div.blog-footer-bottom'))
     document.querySelector('#copyright-box').parentElement.removeChild(document.querySelector('#copyright-box'))
+    let hideSchoolWindow = () => {
+        if(document.querySelector('#csdn-highschool-window') !== null) {
+            document.querySelector('#csdn-highschool-window').style.display = 'none'
+        }
+    }
+    setTimeout(hideSchoolWindow,3000)
 })();
 
